@@ -21,4 +21,36 @@
     max-width: 100%;
 }
 
+/* 设置input占位符的样式 */
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: red;
+}
 
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: red;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: red;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: red;
+}
+
+/* 去除input边框 */
+input {
+    border: none;
+    outline: none;
+}
+
+/* 相邻兄弟选择器之常用场景 */
+li+li {
+    border-top: 1px solid red;
+}
+
+/* outline不计算大小 border计算大小 */
